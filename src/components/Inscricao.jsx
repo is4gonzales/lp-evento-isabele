@@ -32,12 +32,12 @@ function Inscricao() {
 
         <label className="block mb-4">
           <span className="block mb-1 text-sm font-bold text-gray-700">Nome Completo</span>
-          <input type="text" required value={nome} onChange={(e) => setNome(e.target.value)} className="w-full p-2.5 rounded-lg text-gray-950 border border-gray-200 focus:outline-none focus:border-pink-700 bg-gray-50 text-sm" placeholder="Seu nome" />
+          <input type="text" required autoComplete="name" value={nome} onChange={(e) => setNome(e.target.value)} className="w-full p-2.5 rounded-lg text-gray-950 border border-gray-200 focus:outline-none focus:border-pink-700 bg-gray-50 text-sm" placeholder="Seu nome" />
         </label>
 
         <label className="block mb-4">
           <span className="block mb-1 text-sm font-bold text-gray-700">E-mail do Atleta</span>
-          <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-2.5 rounded-lg text-gray-950 border border-gray-200 focus:outline-none focus:border-pink-700 bg-gray-50 text-sm" placeholder="seuemail@exemplo.com" />
+          <input type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-2.5 rounded-lg text-gray-950 border border-gray-200 focus:outline-none focus:border-pink-700 bg-gray-50 text-sm" placeholder="seuemail@exemplo.com" />
         </label>
 
         <label className="block mb-6">

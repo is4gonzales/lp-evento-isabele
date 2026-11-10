@@ -25,10 +25,11 @@ function GaleriaMomentos() {
       <p className="text-sm text-gray-500 mb-8 text-center">Clique nas setas para navegar pela experiência completa da corrida.</p>
 
       <div className="relative bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden p-6 min-h-[680px] flex flex-col justify-between">
-        
-        <div className="w-full h-[500px] bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center border border-gray-100">
-          <img src={momentos[indexAtivo].foto} alt={momentos[indexAtivo].titulo} className="w-full h-full object-cover" />
+
+        <div className="w-full h-[500px] bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center border border-gray-100">
+          <img src={momentos[indexAtivo].foto} alt={momentos[indexAtivo].titulo} className="w-full h-full object-contain" />
         </div>
+
 
         <div className="mt-6 text-center px-4">
           <h3 className="text-2xl font-black text-gray-900 uppercase tracking-tight">{momentos[indexAtivo].titulo}</h3>

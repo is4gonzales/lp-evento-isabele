@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primaria: #be185d;
-  --color-destaque: #be185d;
-  --color-fundo: #f8fafc;
+  --color-primaria: #be185d; 
+  --color-destaque: #be185d; 
+  --color-fundo: #f8fafc;    
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primaria);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
