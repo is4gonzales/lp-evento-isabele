@@ -30,16 +30,15 @@ function GaleriaMomentos() {
           <img src={momentos[indexAtivo].foto} alt={momentos[indexAtivo].titulo} className="w-full h-full object-contain" />
         </div>
 
-
         <div className="mt-6 text-center px-4">
           <h3 className="text-2xl font-black text-gray-900 uppercase tracking-tight">{momentos[indexAtivo].titulo}</h3>
-          <p className="text-gray-600 text-base mt-2 leading-relaxed">{momentos[indexAtivo].legenda}</p>
+          <p className="text-gray-800 text-base mt-2 leading-relaxed">{momentos[indexAtivo].legenda}</p>
         </div>
 
         <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-50">
-          <button onClick={anterior} className="bg-pink-50 text-pink-700 font-black px-6 py-3 rounded-full hover:bg-pink-100 transition-colors text-sm min-h-[44px] min-w-[44px] flex items-center justify-center">← Voltar</button>
-          <span className="text-sm font-bold text-gray-400">{indexAtivo + 1} / {momentos.length}</span>
-          <button onClick={proximo} className="bg-pink-700 text-white font-black px-6 py-3 rounded-full hover:bg-pink-800 transition-colors text-sm min-h-[44px] min-w-[44px] flex items-center justify-center">Avançar →</button>
+          <button onClick={anterior} aria-label="Momento anterior" className="bg-pink-100 text-pink-900 font-black px-6 py-3 rounded-full hover:bg-pink-200 transition-colors text-sm min-h-[44px] min-w-[44px] flex items-center justify-center">← Voltar</button>
+          <span className="text-sm font-bold text-gray-500">{indexAtivo + 1} / {momentos.length}</span>
+          <button onClick={proximo} aria-label="Próximo momento" className="bg-pink-700 text-white font-black px-6 py-3 rounded-full hover:bg-pink-800 transition-colors text-sm min-h-[44px] min-w-[44px] flex items-center justify-center">Avançar →</button>
         </div>
 
       </div>
