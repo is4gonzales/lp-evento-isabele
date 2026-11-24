@@ -4,6 +4,7 @@ import Sobre from './components/Sobre'
 import Programacao from './components/Programacao'
 import GaleriaMomentos from './components/GaleriaMomentos'
 import Atracoes from './components/Atracoes'
+import Grafico from './components/Grafico'
 import Inscricao from './components/Inscricao'
 import PerguntasFrequentes from './components/PerguntasFrequentes'
 import Rodape from './components/Rodape'
@@ -18,6 +19,7 @@ function App() {
         <Programacao />
         <GaleriaMomentos />
         <Atracoes />
+        <Grafico />
         <Inscricao />
         <PerguntasFrequentes />
       </main>
